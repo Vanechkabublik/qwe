@@ -30,7 +30,7 @@ class S3Uploader {
         
         $this->s3 = new Aws\S3\S3Client([
             'version' => 'latest',
-            'region'  => Env::get('S3_REGION'),
+            'region'  => 'ru-1',
             'endpoint' => Env::get('S3_ENDPOINT'),
             'credentials' => [
                 'key'    => Env::get('S3_ACCESS_KEY'),
